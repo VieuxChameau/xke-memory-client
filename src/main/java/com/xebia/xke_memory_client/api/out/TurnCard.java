@@ -1,31 +1,33 @@
 package com.xebia.xke_memory_client.api.out;
 
 public class TurnCard {
-    private String symbol;
-    private String color;
-    private boolean found;
+	private String symbol;
 
-    public String getSymbol() {
-        return symbol;
-    }
+	private String color;
 
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
+	private boolean found;
 
-    public String getColor() {
-        return color;
-    }
+	public String getSymbol() {
+		return symbol;
+	}
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+	public void setSymbol(String symbol) {
+		this.symbol = symbol;
+	}
 
-    public boolean isFound() {
-        return found;
-    }
+	public String getColor() {
+		return color;
+	}
 
-    public void setFound(boolean found) {
-        this.found = found;
-    }
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public boolean isFound() {
+		return found;
+	}
+
+	public void setFound(boolean found) {
+		this.found = found;
+	}
 }

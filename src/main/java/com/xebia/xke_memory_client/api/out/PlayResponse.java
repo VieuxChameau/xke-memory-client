@@ -1,51 +1,52 @@
 package com.xebia.xke_memory_client.api.out;
 
 public class PlayResponse {
-    /**
-     * game round
-     */
-    private int gameId;
-    /**
-     * game progress, in percents
-     */
-    private float progress;
+	/**
+	 * game round
+	 */
+	private int gameId;
 
-    /**
-     * total score of the game
-     */
-    private int gameScore;
+	/**
+	 * game progress, in percents
+	 */
+	private float progress;
 
-    private Turn turn;
+	/**
+	 * total score of the game
+	 */
+	private int gameScore;
 
-    public int getGameId() {
-        return gameId;
-    }
+	private Turn turn;
 
-    public void setGameId(int gameId) {
-        this.gameId = gameId;
-    }
+	public int getGameId() {
+		return gameId;
+	}
 
-    public float getProgress() {
-        return progress;
-    }
+	public void setGameId(int gameId) {
+		this.gameId = gameId;
+	}
 
-    public void setProgress(float progress) {
-        this.progress = progress;
-    }
+	public float getProgress() {
+		return progress;
+	}
 
-    public int getGameScore() {
-        return gameScore;
-    }
+	public void setProgress(float progress) {
+		this.progress = progress;
+	}
 
-    public void setGameScore(int gameScore) {
-        this.gameScore = gameScore;
-    }
+	public int getGameScore() {
+		return gameScore;
+	}
 
-    public Turn getTurn() {
-        return turn;
-    }
+	public void setGameScore(int gameScore) {
+		this.gameScore = gameScore;
+	}
 
-    public void setTurn(Turn turn) {
-        this.turn = turn;
-    }
+	public Turn getTurn() {
+		return turn;
+	}
+
+	public void setTurn(Turn turn) {
+		this.turn = turn;
+	}
 }

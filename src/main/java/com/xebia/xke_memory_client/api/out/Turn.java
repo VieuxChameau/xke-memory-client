@@ -3,38 +3,39 @@ package com.xebia.xke_memory_client.api.out;
 import java.util.List;
 
 public class Turn {
-    /**
-     * score in this turn
-     */
-    private int turnScore;
+	/**
+	 * score in this turn
+	 */
+	private int turnScore;
 
-    private List<TurnCard> cards;
-    /**
-     * warn message if exists
-     */
-    private String message;
+	private List<TurnCard> cards;
 
-    public int getTurnScore() {
-        return turnScore;
-    }
+	/**
+	 * warn message if exists
+	 */
+	private String message;
 
-    public void setTurnScore(int turnScore) {
-        this.turnScore = turnScore;
-    }
+	public int getTurnScore() {
+		return turnScore;
+	}
 
-    public List<TurnCard> getCards() {
-        return cards;
-    }
+	public void setTurnScore(int turnScore) {
+		this.turnScore = turnScore;
+	}
 
-    public void setCards(List<TurnCard> cards) {
-        this.cards = cards;
-    }
+	public List<TurnCard> getCards() {
+		return cards;
+	}
 
-    public String getMessage() {
-        return message;
-    }
+	public void setCards(List<TurnCard> cards) {
+		this.cards = cards;
+	}
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
 }

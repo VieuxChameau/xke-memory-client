@@ -1,19 +1,20 @@
 package com.xebia.xke_memory_client.domain;
 
 public class MatchingCell {
-    private final GridCell firstCell;
-    private final GridCell secondCell;
+	private final GridCell firstCell;
 
-    public MatchingCell(final GridCell firstCell, final GridCell secondCell) {
-        this.firstCell = firstCell;
-        this.secondCell = secondCell;
-    }
+	private final GridCell secondCell;
 
-    public GridCell getFirstCell() {
-        return firstCell;
-    }
+	public MatchingCell(final GridCell firstCell, final GridCell secondCell) {
+		this.firstCell = firstCell;
+		this.secondCell = secondCell;
+	}
 
-    public GridCell getSecondCell() {
-        return secondCell;
-    }
+	public GridCell getFirstCell() {
+		return firstCell;
+	}
+
+	public GridCell getSecondCell() {
+		return secondCell;
+	}
 }

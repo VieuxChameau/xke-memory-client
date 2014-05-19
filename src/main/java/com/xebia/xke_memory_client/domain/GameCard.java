@@ -3,35 +3,36 @@ package com.xebia.xke_memory_client.domain;
 import java.util.Objects;
 
 public class GameCard {
-    private final String symbol;
-    private final String color;
+	private final String symbol;
 
-    public GameCard(String symbol, String color) {
-        this.symbol = symbol;
-        this.color = color;
-    }
+	private final String color;
 
-    public String getSymbol() {
-        return symbol;
-    }
+	public GameCard(String symbol, String color) {
+		this.symbol = symbol;
+		this.color = color;
+	}
 
-    public String getColor() {
-        return color;
-    }
+	public String getSymbol() {
+		return symbol;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
+	public String getColor() {
+		return color;
+	}
 
-        final GameCard gameCard = (GameCard) o;
+	@Override
+	public boolean equals(Object o) {
+		if (o == null || getClass() != o.getClass()) {
+			return false;
+		}
 
-        return Objects.equals(symbol, gameCard.symbol) && Objects.equals(color, gameCard.color);
-    }
+		final GameCard gameCard = (GameCard) o;
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(symbol, color);
-    }
+		return Objects.equals(symbol, gameCard.symbol) && Objects.equals(color, gameCard.color);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(symbol, color);
+	}
 }

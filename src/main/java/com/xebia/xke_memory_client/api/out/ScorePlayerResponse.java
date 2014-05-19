@@ -9,18 +9,18 @@ import java.util.Map;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ScorePlayerResponse {
 
-    private Map<Integer, Integer> scores = new HashMap<>();
+	private Map<Integer, Integer> scores = new HashMap<>();
 
-    public Map<Integer, Integer> getScores() {
-        return scores;
-    }
+	public Map<Integer, Integer> getScores() {
+		return scores;
+	}
 
-    public void setScores(Map<Integer, Integer> scores) {
-        this.scores = scores;
-    }
+	public void setScores(Map<Integer, Integer> scores) {
+		this.scores = scores;
+	}
 
-    @JsonAnySetter
-    public void handleUnknown(final String key, final Object value) {
-        scores.put(Integer.valueOf(key), (Integer) value);
-    }
+	@JsonAnySetter
+	public void handleUnknown(final String key, final Object value) {
+		scores.put(Integer.valueOf(key), (Integer) value);
+	}
 }
