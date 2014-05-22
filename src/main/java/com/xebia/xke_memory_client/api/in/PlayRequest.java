@@ -1,8 +1,6 @@
 package com.xebia.xke_memory_client.api.in;
 
 
-import com.xebia.xke_memory_client.domain.Point;
-
 public class PlayRequest {
 	private final Point firstPoint;
 

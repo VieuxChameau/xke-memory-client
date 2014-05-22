@@ -1,4 +1,4 @@
-package com.xebia.xke_memory_client.domain;
+package com.xebia.xke_memory_client.api.in;
 
 import java.util.Objects;
 
